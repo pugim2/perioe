@@ -1,0 +1,183 @@
+#wrap {
+    width: 100%;
+}
+
+/* 메인 */
+#main {
+    width: 1920px;
+    height: 1000px;
+
+
+}
+
+
+#header {
+    width: 1920px;
+    height: 150px;
+    /* background-color: aquamarine; */
+    justify-content: center;
+    display: flex;
+
+}
+
+#header_in {
+    width: 1680px;
+    height: 150px;
+    display: flex;
+    /* background-color: bisque; */
+
+
+
+
+}
+
+#header_in .logo {
+    width: 230px;
+    height: 60px;
+    /* background-color: rgb(50, 70, 107); */
+    padding-top: 55px;
+    margin-right: 70px;
+
+
+}
+
+#header_in .nav {
+    margin-left: 30px;
+    width: 1050px;
+    height: 150px;
+    /* background-color: rgb(130, 130, 206); */
+    display: flex;
+    align-items: center;
+
+}
+
+#header_in .nav ul {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+#header_in .nav li {
+    float: left;
+}
+
+#header_in .nav a {
+    font-size: 20px;
+}
+
+
+#header_in .group {
+    width: 250px;
+    height: 150px;
+    /* background-color: blueviolet; */
+    margin-left: 120px;
+    display: flex;
+    align-items: center;
+}
+
+#header_in .group ul {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#header_in .group li {}
+#header_in .group li div{
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 20px;
+}
+#header_in .group a {
+    font-size: 20px;
+}
+
+
+#main .main_img {
+    width: 1680px;
+    height: 700px;
+    background-image: url('../image/KakaoTalk_20221214_030958600.png') ;
+    background-size: 1680px 1000px;
+
+    /* display: block; */
+    margin: 0 auto;
+    /* overflow: hidden; */
+
+
+}
+
+/* 메인 이미지 슬라이드 버튼 */
+#main .main_slideBtn {
+    width: 85px;
+    height: 200px;
+    background-color: brown;
+}
+
+/* 회사*/
+
+#body{
+    width: 1680px;
+    height: 1800px;
+    margin: 0 auto;
+    /* background-color: antiquewhite; */
+    margin-top: 60px;
+
+}
+#a1{
+    width: 1680px;
+    height: 750px;
+    /* background-color: aquamarine; */
+}
+#a1 h2{
+    font-size: 30px;
+    color: rgb(39, 38, 38);
+}
+#a1 p{
+    margin-top: 40px;
+    font-size: 15px;
+}
+#a1 .al_img{
+    margin-top: 60px;
+    width: 1680px;
+    height: 500px;
+    background-color: darkblue;
+
+}
+
+#a2{
+    width: 1680px;
+    height: 950px;
+    /* background-color: rgb(210, 231, 224); */
+}
+#a2 h3{
+    font-size: 25px;
+    color: rgb(65, 63, 63);
+}
+#a2 p{
+    margin-top: 20px;
+    font-size: 15px;
+}
+#a2 .a2_img{
+    margin-top: 60px;
+    width: 1680px;
+    height: 500px;
+    background-color: darkblue;
+}
+#a2 h4{
+    margin-top: 20px;
+    font-size: 25px;
+    color: rgb(65, 63, 63);
+}
+
+/* 하단 */
+#footer {
+    width: 1920px;
+    height: 100px;
+    background-color: rgb(89, 89, 84);
+}
+#footer p{
+    padding: 20px;
+    margin: 0 326px;
+    font-size: 12px;
+    color: #fff;
+    line-height: 20px;
+}
