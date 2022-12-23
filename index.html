@@ -8,7 +8,16 @@
     <title>perioe</title>
     <link rel="stylesheet" type="text/css" href="./css/reset.css">
     <link rel="stylesheet" type="text/css" href="./css/index.css">
+    <link rel="stylesheet" type="text/css" media="(max-width:480px)" href="./css/index(480).css">
+
+    <script src="./js/index.js"></script>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/jquery-ui.js"></script>
+
 </head>
+<script>
+
+</script>
 
 <body>
     <div id="wrap">
@@ -17,15 +26,47 @@
             <header id="header">
                 <div id="header_in">
                     <div class="logo">
-                        <img src="" alt="">
+                        <img src="./image/LOGO.png" alt="">
                     </div>
-                    <div class="nav">
-                        <ul>
-                            <li><a href="#">페리오</a></li>
-                            <li><a href="#">제품</a></li>
-                            <li><a href="#">Dr.페리오</a></li>
-                            <li><a href="#">제품추천</a></li>
-                            <li><a href="#">고객센터</a></li>
+                    <div id="nav">
+                        <ul class="main">
+                            <li><a href="/sub1.html">페리오</a>
+                                <ul class="sub">
+                                    <li><a href="#">페리오소개</a></li>
+                                    <li><a href="#">페리오역사</a></li>
+                                    <li><a href="#">페리오cf</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">제품</a>
+                                <ul class="sub">
+                                    <li><a href="#">치약</a></li>
+                                    <li><a href="#">칫솔</a></li>
+                                    <li><a href="#">구강위생용품</a></li>
+                                    <li><a href="#">치아미백</a></li>
+                                    <li><a href="#">Review</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Dr.페리오</a>
+                                <ul class="sub">
+                                    <li><a href="#">구강관리정보</a></li>
+                                    <li><a href="#">키즈스쿨</a></li>
+
+                                </ul>
+
+                            </li>
+                            <li><a href="#">제품추천</a>
+                                <ul class="sub">
+                                    <li><a href="#">추천상품</a></li>
+                                </ul>
+
+                            </li>
+                            <li><a href="#">고객센터</a>
+                                <ul class="sub">
+                                    <li><a href="#">cs센터</a></li>
+
+                                </ul>
+
+                            </li>
                         </ul>
                     </div>
                     <div class="group">
@@ -38,15 +79,21 @@
                         </ul>
                     </div>
                 </div>
+
             </header>
-            <div class="main_img">
-                <!-- <div class="main_slideBtn">
+            <div class="main_img"></div>
+            <div class="main_tit">
+                <h3>히말라야 핑크솔트 담은 <br />
+                    프리미엄 펌핑치약</h3><br />
+                <p>#핑크빛 잇몸 #핑크솔트 #귀족소금</p>
+            </div>
+            <!-- <div class="main_slideBtn">
                 <ul>
                     <li><a href=""></a></li>
                     <li><a href=""></a></li>
                     <li><a href=""></a></li>
                 </ul> -->
-            </div>
+
     </div>
 
     </section>
@@ -79,13 +126,27 @@
         </div>
 
         <article class="pro_body">
-            <div class="pro_list">
-                <ul>
-                    <li><a href=""></a>1</li>
-                    <li><a href=""></a>2</li>
-                    <li><a href=""></a>3</li>
-                    <li><a href=""></a>4</li>
+            <div class="pro_view">
+                <ul class="list">
+                    <li><a href=""><img src="./image/AHG63867_E20_m.jpg"></a>
+                        <p>키즈 치약1</p>
+                        <div class="pro_btn"><a href="">제품 자세히보기 → </a></div>
+                    </li>
+                    <li><a href=""><img src="./image/AHG63868_E20_m.jpg"></a>
+                        <p>키즈 치약2</p>
+                        <div class="pro_btn"><a href="">제품 자세히보기 → </a></div>
+                    </li>
+                    <li><a href=""><img src="./image/AHG63887_E20_m.jpg"></a>
+                        <p>키즈 치약3</p>
+                        <div class="pro_btn"><a href="">제품 자세히보기 → </a></div>
+                    </li>
+                    <li><a href=""><img src="./image/AHG63888_E20_m.jpg"></a>
+                        <p>키즈 치약4</p>
+                        <div class="pro_btn"><a href="">제품 자세히보기 → </a></div>
+                    </li>
                 </ul>
+
+            </div>
 
         </article>
         </div>
@@ -108,19 +169,50 @@
                     <p>나에게 맞는 제품은?</p>
                 </div>
                 <div class="q_txt">
-                    <p>추천 받고싶은 제품 </p>
+                    <h4>추천 받고싶은 제품</h4>
+                    <select name="q_age" id="q_age" required>
+                        <option value="" disabled selected>나이</option>
+                        <option value="age1">어린이</option>
+                        <option value="age2">청소년</option>
+                        <option value="age3">성인</option>
+                    </select>
+
+                    <select name="q_use" id="q_use">
+                        <option value="" disabled selected>용도</option>
+                        <option value="use1">치약</option>
+                        <option value="use2">칫솔</option>
+                        <option value="use3">잇몸건강</option>
+                    </select>
+
+                    <select name="q_perfume" id="q_perfume">
+                        <option value="" disabled selected>향</option>
+                        <option value="perfume1">민트</option>
+                        <option value="perfume2">로즈마리</option>
+                        <option value="perfume3">청포도</option>
+                    </select>
+                    <p>제품 _____ 을 추천드립니다</p>
                 </div>
             </div>
         </div>
+        </div>
         <div id="re_body">
             <ul>
-                <li><a href="">추천상품1</a></li>
-                <li><a href="">추천상품2</a></li>
-                <li><a href="">추천상품3</a></li>
+                <li>
+                    <a href="#"><img src="./image/AHG09315_E20_m.jpg" alt=""></a>
+                    <p>페리오 토탈 7 케어 치약</p>
+                </li>
+                <li>
+                    <a href="#"><img src="./image/AHG11461_E20_m.jpg" alt=""></a>
+                    <p>페리오 펌핑 치약</p>
+                </li>
+                <li>
+                    <a href="#"><img src="./image/AHG15262_E20_m.jpg" alt=""></a>
+                    <p>페리오 클라이덴 미백 치약</p>
+                </li>
             </ul>
 
             <div class="re_btn">
-                <a href="">더 알아보기</a>
+                <a class="btn1" href="">제품 더 알아보기</a>
             </div>
 
 
@@ -129,11 +221,67 @@
 
     </section>
     <!-- 키즈스쿨 -->
-    <section id="kid"></section>
+    <section id="kid">
+        <div id="kid_header">
+            <h2>키즈스쿨</h2>
+        </div>
+        <div id="kid_body">
+
+            <div class="kid_logo">
+                <a href="#"><img src="./image/intro_prg.jpg" alt="" /></a>
+            </div>
+            <div class="kid_list">
+                <ul>
+                    <li><a href="#"><img src="./image/kid1.png" alt="" />
+                        </a>
+                        <p>유치원 방문교육</p>
+                    </li>
+                    <li><a href="#"><img src="./image/kid2.png" alt="" />
+                        </a>
+                        <p>페리오 양치교실</p>
+                    </li>
+                    <li><a href="#"><img src="./image/kid3.png" alt="" /></a>
+                        <p>불소도포 사업</p>
+                    </li>
+                    <li><a href="#"><img src="./image/kid4.png" alt="" />
+                        </a>
+                        <p>양치모법 유치원</p>
+                    </li>
+                    <li><a href="#"><img src="./image/kid5.png" alt="" />
+                        </a>
+                        <p>전문가 연계활동</p>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+
+
+
+
+    </section>
     <!-- 고객센터 & 뉴스 -->
-    <section id="cs_center"></section>
+    <section id="cs_center">
+        <div class="cs_body">
+            <div class="cs_1">
+                <img src="./image/1.png" alt="" />
+                <p>고객센터 ></p>
+            </div>
+            <div class="cs_2">
+                <img src="./image/2.png" alt="" />
+                <p>news & notice ></p>
+            </div>
+
+        </div>
+
+    </section>
     <!-- 하단 -->
-    <footer id="footer"></footer>
+    <footer id="footer">
+        <p>개인정보처리방침사이트 | 이용약관e-mail | 무단수집거부 <br />
+            ㈜LG생활건강대표이사 : 차석용 주소 : 서울특별시 종로구 신문로 2가 92번지 LG광화문빌딩 사업자등록번호 : 107-81-98143 고객상담실 : 080-023-7007 <br />
+            Copyright ⓒ LG H&H Co., Ltd. All Rights Reserved.</p>
+    </footer>
 
 
     </div>
